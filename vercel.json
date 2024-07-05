@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/loadBalancer", "dest": "/api/loadBalancer.js" },
+      { "src": "/api/server8080", "dest": "/api/server8080.js" },
+      { "src": "/api/server8081", "dest": "/api/server8081.js" },
+      { "src": "/api/server8082", "dest": "/api/server8082.js" }
+    ]
+  }
+  
